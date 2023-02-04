@@ -9,9 +9,9 @@ dotenv.config();
 
 // CORS
 const corsOptions = {
-    origin:'https://vidapp-admin.netlify.app', 
-    credentials:true, //access-control-allow-credentials:true
-    optionSuccessStatus:200
+    origin: '*', 
+    credentials: true, //access-control-allow-credentials:true
+    optionSuccessStatus: 200
 }
 app.use(cors(corsOptions));
 
