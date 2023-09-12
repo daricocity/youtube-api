@@ -43,7 +43,7 @@ app.use((req, res, next) => {
     res.header('Access-Control-Allow-Method', 'GET, POST, OPTIONS, PUT, PATCH, DELETE'),
     res.header('Access-Control-Allow-Headers', 'x-access-token, Origin, X-Requested-with, Content-Type, Accept'),
     next();
-})
+});
 
 app.listen(process.env.PORT || 8000, () => {
     console.log('Backend Server Running');
